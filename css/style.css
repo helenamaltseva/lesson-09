@@ -1,12 +1,16 @@
 .header {
-  font-family: 'Montserrat';
-  font-family: 'Open Sans', sans-serif;
-
-  display: flex; 
-  align-items: center;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-    
-  padding: 20px 136px;
+  align-items: center;
+  padding: 0px;
+  gap: 142px;
+
+  position: absolute;
+  width: 1200px;
+  height: 46px;
+  left: 120px;
+  top: 18px;
 }
 
 .header__logo {
@@ -24,6 +28,15 @@
   justify-content: space-between;
   
   grid-gap: 30px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+
+  width: 352px;
+  height: 28px;
 }
 
 .header__navigation-list-item {
@@ -37,17 +50,15 @@
   line-height: 28px;
   
   cursor: pointer;
- }
+}
 
- .header__navigation-list-item {
-
- }
-
- .header__button {
+.header__button {
   font-family: 'Open Sans', sans-serif;
   width: 252px;
   height: 46px;
+  flex: none;
   padding-top: 17px;
+  text-align: right;
   
   padding-bottom: 17px;
 
@@ -86,24 +97,24 @@
   background: #FF9900;
   color: #FFFFFF;
   border-radius: 4px;
-
-  grid-gap: 32px;
 }
 
 .main__section1 {
-  display: inline-block;
+  display: flex;
   width: 1200px;
   height: 495px;
   
   margin-left: 120px;
-  margin-top: 70px;
+  margin-top: 151px;
   margin-right: 120px;
+
+  grid-gap: 56px;
 }
 
-.main__section1-header {
+.main__section1-item-header {
   width: 500px;
   height: 110px;
-  padding-top: 97px;
+  padding-top: 70px;
   
   font-family: 'Montserrat';
   font-family: 'Open Sans', sans-serif;
@@ -113,7 +124,7 @@
   line-height: 54px;
 }
 
-.main__section1-text {
+.main__section1-item-text {
   width: 500px;
   height: 91px;
   padding-top: 30px;
@@ -126,7 +137,7 @@
   line-height: 28px;
 }
 
-.main__section1-button {
+.main__section1-item-button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -151,15 +162,8 @@
   border-radius: 4px;
 }
 
-.main__section1-image {
-  position: absolute;
-  width: 644px;
-  height: 495px;
+.img {
+  width: 200px;
   display: flex;
-  text-align: right;
-  
-  margin-top: 70px;
-  margin-right: 120px;
-  margin-bottom: 0px;
+  text-align: left;
 }
-
